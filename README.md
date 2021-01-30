@@ -6,7 +6,7 @@ Featuring fat_clouds. Check him out on his [twitch channel](https://www.twitch.t
 
 # Requirements
 
-This plugin requires the default runelite `Time Tracking` plugin to be enabled and the `Birdouse notifiication` box to be checked.
+This plugin requires the default runelite `Time Tracking` plugin to be enabled and the `Birdhouse notifiication` box to be checked.
 
 ![TimeTracking](./docs/imgs/timetracking.png)
 
