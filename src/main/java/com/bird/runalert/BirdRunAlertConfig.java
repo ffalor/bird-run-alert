@@ -8,12 +8,11 @@ import net.runelite.client.config.ConfigItem;
 public interface BirdRunAlertConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "volume",
+		name = "Volume control",
+		description = "Volume control to set the volume of the alert"
 	)
-	default String greeting()
-	{
-		return "Hello";
+	default int volume() {
+		return 50;
 	}
 }
