@@ -65,6 +65,9 @@ public class BirdRunAlertPlugin extends Plugin
 			try (AudioInputStream sound = AudioSystem.getAudioInputStream(fileStream))
 			{
 				clip = AudioSystem.getClip();
+				FloatControl control = (FloatControl) clip.getControl(FloatControl.Type.VOLUME);
+				float newVolume = ((config.volume() / control.getMaximum()) * control.getMinimum()) + control.getMinimum();
+				control.setValue(newVolume);
 				clip.open(sound);
 				clip.setFramePosition(clip.getFrameLength());
 				clip.loop(1);
